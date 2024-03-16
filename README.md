@@ -127,3 +127,31 @@ fname = 12 --> yaha pe error aayega ...inference ne detect kiya ki isme pahle st
 as String define karne pe hame bhut sare props ya bol sakte hai unke methoda mil jate hai
 
 -> numbers --> used for numbers
+
+1. static Types
+*Built in (primitive)data types*
+
+1.string
+2.number
+3.boolean
+4.void
+5.null
+6.undefined
+
+*User defined types*
+
+1.Array
+2.touple
+3.Enum
+4.Functions
+5.Class
+6.Interface
+
+
+Array -> an array is the collection of elements of the same data types.
+
+tuple -> we can define set of data type to allowed to keep in list and it will be fixed in size
+
+interface ->an interface act as contract in our system for classes to follow, means a class which implements an interface is bound to implement all its members. It cannot be instantiated but can be referenced by the class which implements it. The TypeScript compiler uses interface for type-checking that is also known as "duck typing" or "structural subtyping."
+
+class -> Classes are used to create reusable components and acts as a template for creating objects. It is a logical entity which store variables and functions to perform operations. TypeScript gets support for classes from ES6. It is different from the interface which has an implementation inside it, whereas an interface does not have any implementation inside it.
