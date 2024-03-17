@@ -75,3 +75,46 @@ var calculator = {
     }
 };
 console.log(calculator.subtract(8, 5));
+//class
+var Animal = /** @class */ (function () {
+    function Animal(name, type, count) {
+        this.name = name;
+        this.type = type;
+        this.count = count;
+    }
+    Animal.prototype.showDetails = function () {
+        console.log(this.name + " : " + this.type);
+    };
+    return Animal;
+}());
+var animal = new Animal("umesh", "dog", 2);
+animal.showDetails();
+//-----------------------enums
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+;
+var c;
+c = Color.Green;
+console.log(c); //enum index start with 0 ...for this it is 1
+//-----------------------------Functions
+//named function with number as parameters type and return type  
+function add(a, b) {
+    return a + b;
+}
+//anonymous function with number as parameters type and return type  
+var sum2 = function (a, y) {
+    return a + y;
+};
+sum2(5, 6);
+//------------------------------Generics
+function identity(arg) {
+    return arg;
+}
+var output3 = identity("myString");
+var output4 = identity(100);
+console.log(output3);
+console.log(output4);

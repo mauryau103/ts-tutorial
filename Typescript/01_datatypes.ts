@@ -131,12 +131,55 @@ class Animal
         this.type = type;
         this.count = count;
     }
-
+    
     showDetails()  
     {  
         console.log(this.name + " : " + this.type);  
     }  
 }
+
+let animal:Animal = new Animal("umesh","dog",2);
+animal.showDetails();
+
+//-----------------------enums
+
+enum Color{
+    Red,Green,Blue
+};
+
+let c:Color;
+c = Color.Green;
+
+console.log(c);  //enum index start with 0 ...for this it is 1
+
+//-----------------------------Functions
+
+
+//named function with number as parameters type and return type  
+function add(a: number, b: number): number {  
+    return a + b;  
+}  
+
+//anonymous function with number as parameters type and return type  
+let sum2= function (a: number, y: number): number {  
+    return a+y;  
+};  
+
+
+sum2(5,6)
+
+//------------------------------Generics
+
+function identity<T>(arg: T): T {  
+    return arg;  
+}  
+
+let output3 = identity<string>("myString");  
+let output4 = identity<number>( 100 );  
+
+console.log(output3);
+console.log(output4);
+
 
 
 

@@ -155,3 +155,7 @@ tuple -> we can define set of data type to allowed to keep in list and it will b
 interface ->an interface act as contract in our system for classes to follow, means a class which implements an interface is bound to implement all its members. It cannot be instantiated but can be referenced by the class which implements it. The TypeScript compiler uses interface for type-checking that is also known as "duck typing" or "structural subtyping."
 
 class -> Classes are used to create reusable components and acts as a template for creating objects. It is a logical entity which store variables and functions to perform operations. TypeScript gets support for classes from ES6. It is different from the interface which has an implementation inside it, whereas an interface does not have any implementation inside it.
+
+function--> here we have normal function and anonymous function as well
+
+Generic --> ise use karke hum log kuch common method bana sakte hai for any datatype denote as a T
